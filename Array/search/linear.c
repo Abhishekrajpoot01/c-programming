@@ -2,10 +2,10 @@
 int main(){
   int i,A[10],n,f=0;
   for(i=0;i<10;i++){
-    printf("enter the no");
+    printf("enter the no: ");
     scanf("%d",&A[i]);
   }
-  printf("enter the number to search");
+  printf("enter the number to search: ");
   scanf("%d",&n);
   for(i=0;i<10;i++){
     if(A[i]==n){
