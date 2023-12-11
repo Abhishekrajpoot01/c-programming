@@ -20,7 +20,8 @@ int main(){
     mid=(beg+end)/2;
   }
   if(A[mid]==n){
-    printf("numis found=%d",n);
+    printf("num is found=%d and position is =%d",n,A[mid]);
+
   }
   else{
     printf("num is not found=%d",n);
