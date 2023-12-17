@@ -13,7 +13,7 @@ int main()
   printf("hello");
   printName();
   Fact();
-  sum();
+  Arith();
   arr1d();
   evenOdd();
   return 0;
@@ -45,7 +45,7 @@ void Arith()
   printf("enter the value of a and b");
   scanf("%d%d", &a, &b);
   sum = a + b;
-  printf("\nthe sum of the a and b = %d\n", sum);
+  printf("\nthe sum of the a and b = %d\n",sum);
   sub=a-b;
   printf("\nthe subtraction is =%d",sub);
   mul=a*b;
@@ -91,11 +91,11 @@ void small(int arr[],int size){
       arr[0]=arr[i];
     }
   }
-  printf("\nsamllest element=%d\n",arr[0]);
+  printf("\nsamllest element=%d",arr[0]);
 }
 void evenOdd(){
   int n;
-  printf("eneter the number for checking for that num is even or odd : ");
+  printf("\neneter the number for checking for that num is even or odd : ");
   scanf("%d",&n);
   if(n%2==0){
     printf("even");
