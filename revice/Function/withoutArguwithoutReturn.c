@@ -1,8 +1,10 @@
 #include <stdio.h>
+//  function type without return and without argument
 void printName();
 void Fact();
-void sum();
+void Arith();
 void arr1d();
+void evenOdd();
 //  the large function type is without retuen but with argument;
 void large( int arr[],int size);
 void samll(int arr[],int size);
@@ -13,6 +15,7 @@ int main()
   Fact();
   sum();
   arr1d();
+  evenOdd();
   return 0;
 }
 void printName()
@@ -36,13 +39,19 @@ void Fact()
     printf("\n");
   }
 }
-void sum()
+void Arith()
 {
-  int a, b, sum;
+  int a, b, sum,sub,mul,div;
   printf("enter the value of a and b");
   scanf("%d%d", &a, &b);
   sum = a + b;
-  printf("the sum of the a and b = %d\n", sum);
+  printf("\nthe sum of the a and b = %d\n", sum);
+  sub=a-b;
+  printf("\nthe subtraction is =%d",sub);
+  mul=a*b;
+  printf("\nthe multiplication is = %d",mul);
+  div=a/b;
+  printf("\nthe dividion is = %d",div);
 }
 void arr1d()
 {
@@ -83,4 +92,16 @@ void small(int arr[],int size){
     }
   }
   printf("\nsamllest element=%d\n",arr[0]);
+}
+void evenOdd(){
+  int n;
+  printf("eneter the number for checking for that num is even or odd : ");
+  scanf("%d",&n);
+  if(n%2==0){
+    printf("even");
+
+  }
+  else{
+    printf("odd");
+  }
 }
