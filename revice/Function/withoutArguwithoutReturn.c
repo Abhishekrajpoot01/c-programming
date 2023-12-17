@@ -5,6 +5,7 @@ void Fact();
 void Arith();
 void arr1d();
 void evenOdd();
+void febo();
 //  the large function type is without retuen but with argument;
 void large( int arr[],int size);
 void samll(int arr[],int size);
@@ -98,10 +99,22 @@ void evenOdd(){
   printf("\neneter the number for checking for that num is even or odd : ");
   scanf("%d",&n);
   if(n%2==0){
-    printf("even");
+    printf("this number is even");
 
   }
   else{
-    printf("odd");
+    printf("this number is odd");
   }
+  febo(n);
+}
+void febo(n){
+  int n1=0,n2=1;
+  printf("\n\t\tfebonaci series of this num = %d %d", n1, n2);
+  for(int i=2;i<n;i++){
+    int n3=n1+n2;
+    printf("\t%d",n3);
+    n1=n2;
+    n2=n3;
+  }
+
 }
