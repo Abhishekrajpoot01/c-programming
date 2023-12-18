@@ -133,3 +133,9 @@ void febo(n){
             }
         }
 }
+ if (isPrime) {
+        printf("\n%d is a prime number.\n", n);
+    } else {
+        printf("\n%d is not a prime number.\n", n);
+    }
+}
