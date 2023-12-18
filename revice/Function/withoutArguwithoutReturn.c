@@ -7,6 +7,7 @@ void arr1d();
 void evenOdd();
 void febo();
 int isPrime();
+int palinDrome();
 //  the large function type is without retuen but with argument;
 void large( int arr[],int size);
 void samll(int arr[],int size);
@@ -108,6 +109,7 @@ void evenOdd(){
   }
   febo(n);
   isPrime(n);
+  palinDrome(n);
 }
 void febo(n){
   int n1=0,n2=1;
@@ -138,4 +140,20 @@ void febo(n){
     } else {
         printf("\n%d is not a prime number.\n", n);
     }
+}
+int palinDrome(n){
+  int sum=0,r;
+  int t;
+  t=n;
+  while(n>0){
+   r=n%10;
+   sum=sum*10+r;
+   n=n/10;
+  }
+  if(t==n){
+    printf("palindrome");
+  }
+  else{
+    printf("not palindrome");
+  }
 }
