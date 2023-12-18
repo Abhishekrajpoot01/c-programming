@@ -6,6 +6,7 @@ void Arith();
 void arr1d();
 void evenOdd();
 void febo();
+int isPrime();
 //  the large function type is without retuen but with argument;
 void large( int arr[],int size);
 void samll(int arr[],int size);
@@ -106,6 +107,7 @@ void evenOdd(){
     printf("this number is odd");
   }
   febo(n);
+  isPrime(n);
 }
 void febo(n){
   int n1=0,n2=1;
@@ -117,4 +119,17 @@ void febo(n){
     n2=n3;
   }
 
+}
+ isPrime(n){
+  int isPrime = 1; // Assume the number is prime
+
+    if (n <= 1) {
+        isPrime = 0; // Not a prime number
+    } else {
+        for (int i = 2; i * i <= n; ++i) {
+            if (n % i == 0) {
+                isPrime = 0; // Not a prime number
+                break;
+            }
+        }
 }
