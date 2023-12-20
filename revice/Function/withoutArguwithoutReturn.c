@@ -1,5 +1,7 @@
 #include <stdio.h>
 //  function type without return and without argument
+
+
 void printName();
 void Fact();
 void Arith();
@@ -22,10 +24,16 @@ int main()
   evenOdd();
   return 0;
 }
+
+
+
 void printName()
 {
   printf(" Abhishek \n");
 }
+
+//  factorial 
+
 void Fact()
 {
   int n, factorial = 1;
@@ -43,6 +51,10 @@ void Fact()
     printf("\n");
   }
 }
+
+//  arithmatic opeeration 
+
+
 void Arith()
 {
   int a, b, sum,sub,mul,div;
@@ -57,6 +69,12 @@ void Arith()
   div=a/b;
   printf("\nthe dividion is = %d",div);
 }
+
+//  1 d array
+
+
+
+
 void arr1d()
 {
   int size, arr[100];
@@ -76,6 +94,12 @@ void arr1d()
   large(arr,size);
   small(arr,size);
 }
+
+
+//  largest element
+
+
+
 void large(int arr[], int size)
 {
   for (int i = 1; i < size; i++)
@@ -87,6 +111,11 @@ void large(int arr[], int size)
   }
   printf("\nlargest element = %d\n", arr[0]);
 }
+
+// smallest element
+
+
+
 void small(int arr[],int size){
   
   for(int i=0;i<size;i++){
@@ -97,6 +126,12 @@ void small(int arr[],int size){
   }
   printf("\nsamllest element=%d",arr[0]);
 }
+
+//  even odd
+
+
+
+
 void evenOdd(){
   int n;
   printf("\neneter the number for checking for that num is even or odd : ");
@@ -113,6 +148,12 @@ void evenOdd(){
   palinDrome(n);
   armStrong(n);
 }
+
+
+// febonaci series  
+
+
+
 void febo(n){
   int n1=0,n2=1;
   printf("\n\t\tfebonaci series of this num = %d %d", n1, n2);
@@ -124,6 +165,12 @@ void febo(n){
   }
 
 }
+
+
+// prime number 
+
+
+
  isPrime(n){
   int isPrime = 1; // Assume the number is prime
 
@@ -143,6 +190,12 @@ void febo(n){
         printf("\n%d is not a prime number.\n", n);
     }
 }
+
+
+//  palindrome number
+
+
+
 int palinDrome(n){
   int sum=0,r;
   int t;
@@ -159,6 +212,10 @@ int palinDrome(n){
     printf("not palindrome");
   }
 }
+
+//  armstrong number
+
+
 int armStrong(n){
   int sum=0;
   int t,r;
@@ -174,4 +231,9 @@ int armStrong(n){
   else{
     printf("\nnot armstrong");
   }
+}
+
+void sumDigit(){
+   int n;
+   printf("enter the digit ")
 }
