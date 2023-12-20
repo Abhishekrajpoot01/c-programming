@@ -8,6 +8,7 @@ void evenOdd();
 void febo();
 int isPrime();
 int palinDrome();
+int  armStrong(n);
 //  the large function type is without retuen but with argument;
 void large( int arr[],int size);
 void samll(int arr[],int size);
@@ -110,6 +111,7 @@ void evenOdd(){
   febo(n);
   isPrime(n);
   palinDrome(n);
+  armStrong(n);
 }
 void febo(n){
   int n1=0,n2=1;
@@ -155,5 +157,14 @@ int palinDrome(n){
   }
   else{
     printf("not palindrome");
+  }
+}
+int armStrong(n){
+  int sum=0;
+  int t,r;
+  while(n>0){
+    r=n%10;
+    sum=sum+(r*r*r);
+    n=n/10;
   }
 }
