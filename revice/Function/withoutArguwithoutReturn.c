@@ -162,9 +162,16 @@ int palinDrome(n){
 int armStrong(n){
   int sum=0;
   int t,r;
+  t=n;
   while(n>0){
     r=n%10;
     sum=sum+(r*r*r);
     n=n/10;
+  }
+  if(sum==t){
+    printf("\narmstrong");
+  }
+  else{
+    printf("\nnot armstrong");
   }
 }
