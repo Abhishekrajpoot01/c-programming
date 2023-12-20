@@ -23,6 +23,7 @@ int main()
   Arith();
   arr1d();
   evenOdd();
+  sumDigit();
   return 0;
 }
 
@@ -249,4 +250,3 @@ void sumDigit(){
 
 }
 
-}
