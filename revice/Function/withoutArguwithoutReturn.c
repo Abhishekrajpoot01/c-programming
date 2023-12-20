@@ -208,10 +208,10 @@ int palinDrome(n){
    n=n/10;
   }
   if(t==n){
-    printf("palindrome");
+    printf("\npalindrome");
   }
   else{
-    printf("not palindrome");
+    printf("\nnot palindrome");
   }
 }
 
