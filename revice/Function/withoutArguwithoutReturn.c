@@ -11,6 +11,7 @@ void febo();
 int isPrime();
 int palinDrome();
 int  armStrong(n);
+void sumDigit();
 //  the large function type is without retuen but with argument;
 void large( int arr[],int size);
 void samll(int arr[],int size);
@@ -235,5 +236,17 @@ int armStrong(n){
 
 void sumDigit(){
    int n;
-   printf("enter the digit ")
+   int r,sum=0;
+   printf("enter the digit whoes sum you want ");
+   scanf("%d",&n);
+   while(n>0)
+   {
+    r=n%10;
+    sum=sum+r;
+    n=n/10;
+   }
+   printf("\nsum of the digit is =%d",sum);
+
+}
+
 }
