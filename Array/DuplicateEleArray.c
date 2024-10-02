@@ -6,6 +6,7 @@ int main(){
   for(i=0;i<n;i++){
     printf("\n array[%d]=",i);
     scanf("%d",&array[i]);
+    // work is good
 
   }
   for(i=0;i<n;i++){
